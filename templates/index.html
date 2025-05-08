@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Roblox Script Obfuscator</title>
+</head>
+<body>
+  <h2>Paste your Roblox script</h2>
+  <form method="POST">
+    <textarea name="script" rows="20" cols="80" placeholder="Paste your Lua script here"></textarea><br>
+    <button type="submit">Obfuscate</button>
+  </form>
+
+  {% if obfuscated_script %}
+    <h2>Obfuscated Output</h2>
+    <textarea rows="20" cols="80">{{ obfuscated_script }}</textarea>
+  {% endif %}
+</body>
+</html>
